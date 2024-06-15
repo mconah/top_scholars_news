@@ -46,4 +46,4 @@ def robot():
     return render_template("robots.html")
 
 if __name__ == "__main__":
-    app.run(host = "216.24.60.0/24", debug=False)
+    app.run(debug=False)
