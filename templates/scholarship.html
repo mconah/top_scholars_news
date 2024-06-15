@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static/assets/css/main.css" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<div id="wrapper">
+
+				<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="/home" class="logo"><img style="height: 20px;" src="./static/favicon.ico"><strong> Top Scholars News</strong></a>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+				</ul>
+			</header>
+			<section id="banner">
+			<span class="image object">
+				<img src= {% block image_file %} {% endblock %} alt="Image of scholarship" />
+			</span>
+			</section>
+		</div>
+	</div>
+</div>
+
+	<body>
+        {% block body %}
+
+        {% endblock %}
+		<p>
+		<button><a href={% block application_link %}{% endblock %}>Apply now</a></button>
+		</p>
+
+	</body>
+
+</html>
