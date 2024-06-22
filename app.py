@@ -10,7 +10,10 @@ def get_date():
     today_string = today.strftime("%B %d, %Y")
     return today_string
 
+month = get_date().split()[0]
+
 app.jinja_env.globals["date"] = get_date()
+app.jinja_env.globals["month"] = month
 
 @app.route("/")
 @app.route("/home")
@@ -37,7 +40,7 @@ def essays():
 def others():
     return render_template("others.html")
 
-@app.route("/<string:page_name>")
+@app.route(f"/<string:page_name>")
 def pages(page_name):
     return render_template(page_name)
 

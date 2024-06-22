@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="static/assets/css/main.css" />
-	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<meta name="viewport" content="./width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./{{ url_for('static', filename='assets/css/main.css') }}" />
+	<link rel="shortcut icon" href="./{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <div id="wrapper">
 
@@ -24,7 +24,7 @@
 				</ul>
 			</header>
 			<section id="banner">
-			<span class="image object">
+			<span syle="padding: 0%;" class="image object">
 				<img src= {% block image_file %} {% endblock %} alt="Image of scholarship" />
 			</span>
 			</section>

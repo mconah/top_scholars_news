@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Top Scholars News</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="/home" class="logo"><img style="height: 20px;" src="./static/favicon.ico"><strong> Top Scholars News</strong></a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>{% block page_title %} {% endblock %}</h2>
+										<h4>Latest</h4>
+									</header>
+									<div class="posts">
+                                        {% block opportunities %}
+                                        {% endblock %}
+									</div>
+								</section>
+                                <section>
+									<h2>{% block other_title %}{% endblock %}</h2>
+                                    <ul>
+                                        {% block other_link %}
+										{% endblock %}
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+                                        <li><a href="/home">Homepage</a></li>
+                                        <li><a href="/undergraduate">Undegraduate Scholarships</a></li>
+                                        <li><a href="/essays">Essay Competitions</a></li>
+                                        <li><a href="/post_graduate">Post Graduate Opportunities</a></li>
+                                        <li><a href="/internships"> Internships</a></li>
+                                        <li><a href="/others">Other opportunities</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Your three D's to success</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="static/images/man.jpg" alt="" /></a>
+											<p>Decision.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="static/images/cap.jpg" alt="" /></a>
+											<p>Determination.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="static/images/walking.jpg" alt="" /></a>
+											<p>Discipline.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+										<button>Send us an email <a href = "info@topscholarnews.com"></a> </button>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<section>
+                                        <p class="copyright">&copy; Top Scholars News.|  <a href="https://freepik.com">Images from Freepik</a> </p>
+                                    </section>
+								</footer>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
